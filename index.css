@@ -1,0 +1,197 @@
+body{
+    background-color: #000000;
+}
+.containner{
+    background-image: url(/img/escudo.png);
+    background-color: #000000;
+    background-size: cover;
+    border-radius: 100%;
+    margin-top: -440px;
+    width: 1500px;
+    height: 1500px;
+    animation: animacaoEscudo 3s ;
+}
+
+.simbolo{
+    position: absolute;
+    left: 31%;
+    bottom: 30%;
+}
+
+.logo{
+    width: 500px;
+    height: 300px;
+}
+.logo-tipo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: nitdez 5s ;
+}
+
+
+
+.grupos{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.capitao{
+    margin-top: 4px;
+    margin-left: 0px;
+    width: 360px;
+}
+.cap{
+    position: relative;
+    left: 0px;
+    width: 100%;
+    right: 100%;
+    /* animation: nitdez 6s ;  */
+    animation: stiv 5s;
+}
+
+
+
+.homen-de-ferro{
+    margin-top: 4px;
+    margin-right: 0px;
+    width: 370px;
+}
+.ferro{
+    position: relative;
+    left: 0px;
+    width: 100%;
+    right: 100%;
+    /* animation: nitdez 6s ; */
+    animation: stark 5s;
+}
+
+.texto{
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    bottom: -380px;
+    border-top: 6px solid #ff0000;
+    width: 100%;
+    height: 470px;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.float{
+    display: flex;
+    flex-direction: row;
+}
+.negrito{
+    font-weight: bold;
+    font-size: 20px;
+}
+.buttons{
+    margin: 20px;
+    text-align: center;
+}
+
+.btn{
+    margin: 5px;
+}
+
+h1,h2{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.sinopce{
+    margin: 40px;
+
+}
+
+@keyframes animacaoEscudo {
+    from {
+		transform: rotate(350);
+	} to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes nitdez{
+    0%{
+        opacity: 0.0; 
+
+    }
+    50%{
+        opacity: 0.0; 
+
+    }
+    60%{
+        opacity: 0.1; 
+
+    }
+    70%{
+        opacity: 0.3; 
+
+    }
+    80%{
+        opacity: 0.5; 
+
+    }
+    90%{
+        opacity: 1.8; 
+
+    }
+    100%{
+        opacity: 1.0; 
+
+    }
+}
+
+@keyframes stark {
+    0% {
+        left: 600;
+        opacity: 0.0; 
+    }
+    20%{
+        left: 600px;
+        opacity: 0.0; 
+
+    }
+
+    50%{
+        left: 400px;
+        opacity: 0.8; 
+
+    }
+
+    100%{
+        left: 0px;
+    }
+}
+
+@keyframes stiv {
+    0% {
+        left: -600;
+        opacity: 0.0; 
+    }
+    20%{
+        left: -600px;
+        opacity: 0.0; 
+
+    }
+
+    50%{
+        left: -400px;
+        opacity: 0.8; 
+    }
+
+    100%{
+        left: 0px;
+    }
+}
