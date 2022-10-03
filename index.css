@@ -117,7 +117,8 @@ h1,h2{
 @keyframes animacaoEscudo {
     from {
 		transform: rotate(350);
-	} to {
+	} 
+    to {
 		transform: rotate(360deg);
 	}
 }
